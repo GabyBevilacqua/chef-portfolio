@@ -1,7 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import About from './components/About'
+import Gallery from './components/Gallery'
+import Books from './components/Books'
+import Contact from './components/Contact'
+import "./styles/global.css";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +16,21 @@ function App() {
   return (
     <>
       <div>
+        <Header />
+        <Hero />
+        <About />
+        <Gallery />
+        <Books />
+        <Contact />
+      </div>
+      
+    </>
+  )
+}
+
+export default App
+
+/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -27,9 +49,4 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+      </p> */

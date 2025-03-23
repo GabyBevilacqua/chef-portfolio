@@ -1,0 +1,28 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://res.cloudinary.com/dzqgni1qi/image/upload/v1742650366/chef-hero_v0rtto.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(61, 44, 44);
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  

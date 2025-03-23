@@ -1,0 +1,49 @@
+/* Estilos generales del header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background 0.3s, box-shadow 0.3s;
+    padding: 15px 20px;
+    z-index: 1000;
+  }
+  
+  .header.scrolled {
+    background: rgb(138, 138, 138);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+    cursor: pointer; /* Añadido para cambiar el cursor a una mano */
+  }
+  
+  .nav-links li a:hover {
+    color: gray;
+  }
+  
+  
