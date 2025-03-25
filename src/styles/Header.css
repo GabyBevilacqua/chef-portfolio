@@ -1,49 +1,75 @@
 /* Estilos generales del header */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    transition: background 0.3s, box-shadow 0.3s;
-    padding: 15px 20px;
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s, box-shadow 0.3s;
   
-  .header.scrolled {
-    background: rgb(138, 138, 138);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+  z-index: 1000;
+}
+
+.header.scrolled {
+  background: rgba(8, 64, 61, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly !important; /* Distribuye el espacio entre el logo y los links */
+  align-items: center;
+  max-width: auto;
+  margin: 0 auto; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo {
+  font-size: 2rem; /* Tamaño de fuente más grande en PC */
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Alinea verticalmente los links */
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none; /* Elimina los puntos de la lista */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem; /* Tamaño de fuente más grande en PC */
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
   .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    
+    
+    align-items: center; /* Centra horizontalmente */
   }
-  
+
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem; /* Reduce el tamaño del logo en móvil */
+    margin-bottom: 5px;
   }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+
+  .nav-links li a { /* Aplica el tamaño de fuente directamente a los links */
+    font-size: 0.9rem;
   }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    transition: color 0.3s;
-    cursor: pointer; /* Añadido para cambiar el cursor a una mano */
-  }
-  
-  .nav-links li a:hover {
-    color: gray;
-  }
-  
-  
+}

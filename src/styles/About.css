@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 100px 20px;
-    background: #816e6e;
+    background: #706513;
   }
   
   .about-container {
@@ -26,14 +26,44 @@
   
   .about-text h2 {
     font-size: 2rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
   }
   
   .about-text p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 15px;
   }
+
+  
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 20px; /* Reduce el padding */
+  }
+
+  .about-container {
+    flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Reduce el espacio entre la imagen y el texto */
+  }
+
+  .about-image img {
+    width: 250px; /* Reduce el tamaño de la imagen */
+  }
+
+  .about-text {
+    max-width: 100%; /* Permite que el texto ocupe todo el ancho */
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+  }
+
+  .about-text p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+  }
+}
   

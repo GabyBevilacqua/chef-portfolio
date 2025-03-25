@@ -1,6 +1,12 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
+
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -23,7 +29,7 @@ function App() {
         <Books />
         <Contact />
       </div>
-      
+
     </>
   )
 }
