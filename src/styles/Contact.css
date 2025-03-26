@@ -22,6 +22,7 @@
     gap: 15px;
     width: 100%;
     max-width: 400px;
+    
   }
   
   .contact-form input,
@@ -39,7 +40,7 @@
   }
   
   .contact-button {
-    background: #ff6347;
+    background: #08403D;
     color: #fff;
     padding: 10px;
     border: none;
@@ -50,7 +51,7 @@
   }
   
   .contact-button:hover {
-    background: #e5533d;
+    background: #0e7a75;
   }
   
   .contact-socials {
@@ -61,11 +62,38 @@
   
   .social-icon {
     font-size: 2rem;
-    color: #ff6347;
+    color: #08403D;
     transition: transform 0.3s;
   }
   
   .social-icon:hover {
     transform: scale(1.1);
   }
+
+  /* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px 10px; /* Reduce el padding */
+  }
+
+  .contact-title {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+    margin-bottom: 15px;
+  }
+
+  .contact-form {
+    max-width: 80%; /* Permite que el formulario ocupe todo el ancho disponible */
+    align-items: center;
+    
+  }
+
+  .contact-button {
+    padding: 8px; /* Reduce el padding del botón */
+    font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
+  }
+
+  .social-icon {
+    font-size: 1.5rem; /* Reduce el tamaño de los iconos sociales */
+  }
+}
   

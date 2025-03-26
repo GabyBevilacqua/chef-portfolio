@@ -41,7 +41,7 @@ const Books = () => {
     return (
         <section ref={booksRef} id="books" className="books">
             <h2 className="books-title">Libros Digitales</h2>
-            <div className="books-container">
+            <div className="books-container ">
                 {books.map((book, index) => (
                     <div key={index} className="book-card">
                         <img src={book.image} alt={book.title} className="book-image" />

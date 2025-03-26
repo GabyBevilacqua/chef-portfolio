@@ -1,67 +1,184 @@
 .books {
-    padding: 30px 30px;
-    background: #B67114;
-    text-align: center;
-  }
+   /*margin: [arriba] [derecha] [abajo] [izquierda]; */
+  background: #978d80bd;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/*------------------- efecto ventana con GSAP----------------------*/
+
+.books-background {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.books-background::before {
+  content: "";
+  position: fixed; /* Cambiado de absolute a fixed para que se quede en su lugar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dzqgni1qi/image/upload/v1737049269/samples/food/fish-vegetables.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  will-change: transform; /* Optimización para animaciones */
+}
+
+.books-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.39);
+  z-index: 1;
+}
+.books {
+  position: relative;
+  z-index: 2;
+  width: 100%;
   
-  .books-title {
-    font-size: 2rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
+  background: transparent;
+}
+/*----------------------------------------------------------------- */
+
+.books-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
   
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+}
+
+.book-info {
+  padding: 15px;
+}
+
+.book-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #08403D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background: #0e7a75;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .books {
+    padding: 20px 10px;
+    /* Reduce el padding */
+    overflow-x: auto;
+    /* Permite hacer scroll horizontal */
+    white-space: nowrap;
+    /* Evita que las tarjetas se apilen verticalmente */
+  }
+
   .books-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    /* Cambia de grid a flex */
+    flex-wrap: nowrap;
+    /* Evita que las tarjetas salten a otra línea */
+    gap: 10px;
+    /* Reduce el espacio entre las tarjetas */
+    overflow-x: auto;
+    /* Permite scroll horizontal si no caben */
+    padding-bottom: 10px;
+    /* Agrega un pequeño espacio debajo */
   }
-  
+
   .book-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s ease-in-out;
+    display: flex;
+    /* Hace que el contenido se alinee mejor */
+    flex-direction: column;
+    /* Asegura que los elementos estén en columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos verticalmente si la altura es suficiente */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
   }
-  
-  .book-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .book-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .book-info {
-    padding: 15px;
-  }
-  
+
   .book-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .book-info p {
     font-size: 1rem;
-    color: #666;
-    margin-bottom: 15px;
+    /* Reduce el tamaño del título del libro */
   }
-  
+
+  .book-info p {
+    font-size: 0.8rem;
+    /* Reduce el tamaño del texto */
+    max-width: 100%;
+    /* Evita que el texto sobresalga del contenedor */
+    word-wrap: break-word;
+    /* Rompe las palabras largas si es necesario */
+    overflow-wrap: break-word;
+    /* Alternativa para navegadores más nuevos */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
+    padding: 0 10px;
+    /* Agrega un pequeño margen interno para evitar que toque los bordes */
+    white-space: normal;
+    /* Asegura que el texto se divida en múltiples líneas */
+    overflow: hidden;
+    /* Oculta el exceso de contenido */
+  }
+
   .buy-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #ff6347;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
+    padding: 6px 10px;
+    /* Reduce el padding del botón */
+    font-size: 0.8rem;
+    /* Reduce el tamaño del texto del botón */
   }
-  
-  .buy-button:hover {
-    background: #e5533d;
-  }
-  
+}
