@@ -10,14 +10,16 @@
     text-align: center;
     color: #ffffff;
     padding-top: 20px;
-    margin-top: 83px;
+    margin-top: 90px;
+    
     
   }
   
   .hero-content {
-    background: #962a09b6;
-    padding: 20px;
+    background: #0b1315be;
+    padding: 30px 80px ;
     border-radius: 8px;
+    border: 2px solid #C9AB81; /* Ancho del borde, estilo y color */
   }
   
   .hero-title {

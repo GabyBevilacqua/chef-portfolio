@@ -53,8 +53,8 @@ const About = () => {
     }, []);
 
     return (
-        <section ref={aboutRef} id="about" className="about">
-            <div className="about-content">
+        <section  id="about" className="about">
+            <div ref={aboutRef} className="about-content">
                 <div className="about-container">
                     <div ref={imageRef} className="about-image">
                         <img src="https://res.cloudinary.com/dzqgni1qi/image/upload/v1742662490/chef-profile_mk5dba.jpg" alt="Chef" />

@@ -1,99 +1,121 @@
 .contact {
-    padding: 100px 20px;
-    background: #fff;
-    text-align: center;
-  }
+  padding: 30px;
+  background: #0F1E22;
+  text-align: center;
   
-  .contact-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    max-width: 400px;
-    
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-form textarea {
-    resize: none;
-    height: 120px;
-  }
-  
-  .contact-button {
-    background: #08403D;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .contact-button:hover {
-    background: #0e7a75;
-  }
-  
-  .contact-socials {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icon {
-    font-size: 2rem;
-    color: #08403D;
-    transition: transform 0.3s;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-  }
+}
 
-  /* Estilos para pantallas móviles */
+.contact-title {
+  font-size: 2rem;
+  color: #C9AB81;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 15px;
+  /* Añade padding para evitar que los inputs toquen los bordes */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el ancho total */
+
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #C9AB81;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el ancho total */
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-button {
+  background: #08403D;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #C9AB81;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  /* Asegura que el botón tenga el mismo ancho que los inputs */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el ancho total */
+}
+
+.contact-button:hover {
+  background: #0e7a75;
+}
+
+.contact-socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #C9AB81;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para pantallas móviles */
 @media (max-width: 768px) {
   .contact {
-    padding: 20px 10px; /* Reduce el padding */
+    padding: 20px 10px;
+    /* Reduce el padding */
   }
 
   .contact-title {
-    font-size: 1.5rem; /* Reduce el tamaño del título */
+    font-size: 1.5rem;
+    /* Reduce el tamaño del título */
     margin-bottom: 15px;
   }
 
   .contact-form {
-    max-width: 80%; /* Permite que el formulario ocupe todo el ancho disponible */
-    align-items: center;
-    
+    max-width: 100%;
+    /* Permite que el formulario ocupe todo el ancho disponible */
+    padding: 0 10px;
+    /* Añade padding para evitar que los inputs toquen los bordes */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    /* Reduce el tamaño del texto en los inputs */
   }
 
   .contact-button {
-    padding: 8px; /* Reduce el padding del botón */
-    font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
+    padding: 8px;
+    /* Reduce el padding del botón */
+    font-size: 0.9rem;
+    /* Reduce el tamaño del texto del botón */
   }
 
   .social-icon {
-    font-size: 1.5rem; /* Reduce el tamaño de los iconos sociales */
+    font-size: 1.5rem;
+    /* Reduce el tamaño de los iconos sociales */
   }
 }
-  

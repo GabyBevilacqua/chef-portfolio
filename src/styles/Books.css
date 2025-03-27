@@ -1,54 +1,16 @@
 .books {
-   /*margin: [arriba] [derecha] [abajo] [izquierda]; */
-  background: #978d80bd;
+  /*margin: [arriba] [derecha] [abajo] [izquierda]; */
+  position: relative;
   text-align: center;
-  justify-content: center;
-  border-radius: 5px;
-}
-
-/*------------------- efecto ventana con GSAP----------------------*/
-
-.books-background {
-  position: relative;
-  height: 80vh;
   width: 100%;
-  overflow: hidden;
-}
-
-.books-background::before {
-  content: "";
-  position: fixed; /* Cambiado de absolute a fixed para que se quede en su lugar */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://res.cloudinary.com/dzqgni1qi/image/upload/v1737049269/samples/food/fish-vegetables.jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  will-change: transform; /* Optimización para animaciones */
-}
-
-.books-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.39);
-  z-index: 1;
-}
-.books {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  
   background: transparent;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  /* Ajustado para evitar separación excesiva con Contact */
 }
-/*----------------------------------------------------------------- */
+
+
 
 .books-title {
   font-size: 2rem;
@@ -68,10 +30,10 @@
 .book-card {
   background: #fff;
   border-radius: 10px;
+  border: 2px solid #C9AB81; /* Ancho del borde, estilo y color */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 300px;
-  
   transition: transform 0.3s ease-in-out;
 }
 
@@ -114,10 +76,63 @@
   background: #0e7a75;
 }
 
+/*------------------- efecto ventana con GSAP----------------------*/
+
+.books-background {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.books-background::before {
+  content: "";
+  position: fixed;
+  /* Cambiado de absolute a fixed para que se quede en su lugar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dzqgni1qi/image/upload/v1737049269/samples/food/fish-vegetables.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  will-change: transform;
+  /* Optimización para animaciones */
+}
+
+.books-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.479);
+  z-index: 1;
+}
+
+/*----------------------------------------------------------------- */
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
+
+  .books-overlay {
+   
+    /* Reduce la altura de la superposición */
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+
+  }
+
   .books {
-    padding: 20px 10px;
+
+    padding-left: 20px;
+    padding-right: 20px;
     /* Reduce el padding */
     overflow-x: auto;
     /* Permite hacer scroll horizontal */
@@ -149,11 +164,13 @@
     /* Centra los elementos verticalmente si la altura es suficiente */
     text-align: center;
     /* Asegura que el texto esté centrado */
+    margin-top: 1px;
   }
 
   .book-info h3 {
     font-size: 1rem;
     /* Reduce el tamaño del título del libro */
+    margin-top: 2px;
   }
 
   .book-info p {
@@ -180,5 +197,13 @@
     /* Reduce el padding del botón */
     font-size: 0.8rem;
     /* Reduce el tamaño del texto del botón */
+  }
+
+  .books-background {
+    height: 50vh;
+    /* Reducir altura en pantallas más pequeñas */
+  }
+  .book-card:hover {
+    transform: none;
   }
 }

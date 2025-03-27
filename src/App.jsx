@@ -1,7 +1,4 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -19,13 +16,8 @@ import Contact from './components/Contact'
 import "./styles/global.css";
 import "./styles/Books.css";
 
-
-
-
 function App() {
   const [count, setCount] = useState(0)
-
-
 
   return (
     <>

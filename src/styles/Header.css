@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: #0e191b;
   transition: background 0.3s, box-shadow 0.3s;
   
   z-index: 1000;

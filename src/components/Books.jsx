@@ -48,7 +48,12 @@ const Books = () => {
                         <div className="book-info">
                             <h3>{book.title}</h3>
                             <p>{book.description}</p>
-                            <a href={book.link} target="_blank" rel="noopener noreferrer" className="buy-button">
+                            <a 
+                            href={book.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="buy-button"
+                            >
                                 Comprar
                             </a>
                         </div>
