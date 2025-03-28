@@ -27,9 +27,10 @@
   
   .about-image img {
     width: 300px;
-    height: auto;
-    border-radius: 10px;
+    height: 300px; /* Asegúrate de que la altura sea igual al ancho */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
   }
   
   .about-text {
@@ -66,6 +67,10 @@
 
   .about-image img {
     width: 250px; /* Reduce el tamaño de la imagen */
+    height: 250px; /* Asegúrate de que la altura sea igual al ancho */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
   }
 
   .about-text {

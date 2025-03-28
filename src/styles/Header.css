@@ -6,8 +6,8 @@
   width: 100%;
   background: #0e191b;
   transition: background 0.3s, box-shadow 0.3s;
-  
   z-index: 1000;
+  padding-bottom: 3px;
 }
 
 .header.scrolled {
@@ -56,11 +56,25 @@
   color: #ffffff;
 }
 
+/* Estilos para la hamburguesa */
+.hamburger {
+  display: none; /* Oculto en pantallas grandes */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
-  .nav-container {
-    
-    
+  .nav-container {   
     align-items: center; /* Centra horizontalmente */
   }
 
@@ -71,5 +85,24 @@
 
   .nav-links li a { /* Aplica el tamaño de fuente directamente a los links */
     font-size: 0.9rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #0e191b;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex; /* Muestra el botón en pantallas pequeñas */
   }
 }

@@ -53,20 +53,34 @@ const About = () => {
     }, []);
 
     return (
-        <section  id="about" className="about">
+        <section id="about" className="about">
             <div ref={aboutRef} className="about-content">
                 <div className="about-container">
                     <div ref={imageRef} className="about-image">
-                        <img src="https://res.cloudinary.com/dzqgni1qi/image/upload/v1742662490/chef-profile_mk5dba.jpg" alt="Chef" />
+                        <img src="https://res.cloudinary.com/dzqgni1qi/image/upload/v1743193213/fotogabypeq_w13psm.jpg" alt="Chef" />
                     </div>
                     <div ref={textRef} className="about-text">
                         <h2>Bio</h2>
                         <p>
-                            Soy una chef apasionada por la cocina y la creatividad en cada plato. Con años de experiencia, he desarrollado
-                            un enfoque único que combina tradición e innovación. Mis recetas buscan inspirar y deleitar a quienes las prueban.
+                            ¡Hola! Soy Gabriela B. Franchi, chef profesional con formación en Ingeniería Mecánica. A lo largo de mi carrera, 
+                            he desarrollado habilidades para la resolución de problemas, liderazgo de equipos y gestión eficiente en la cocina, 
+                            siempre buscando la excelencia en cada plato que preparo. <br />
+
+                            Actualmente, trabajo como chef en Campinas, São Paulo, donde ofrezco servicios de 
+                            catering para bodas y eventos. Además, la repostería y los dulces son una de mis 
+                            grandes pasiones, lo que me ha permitido crear propuestas innovadoras y llenas de sabor.<br />
+
+                            Me encanta compartir recetas que combinan tradición y un toque de creatividad, 
+                            como el Pastel de Chucho y preparaciones con vegetales que sorprenden por su sabor 
+                            y versatilidad. Para mí, la cocina es más que una profesión: es una forma de conectar 
+                            con las personas a través de la comida.<br />
+
+                            Si quieres conocer más sobre mi trabajo, te invito a seguirme en mis redes sociales 
+                            y descubrir mis últimas creaciones. ¡Será un placer compartir mi pasión contigo!
                         </p>
                         <p>
-                            Además de cocinar, he escrito dos libros de recetas que reflejan mi amor por la gastronomía y el arte de cocinar con el alma.
+                            Además de cocinar, he escrito dos libros de recetas que reflejan mi amor por la 
+                            gastronomía y el arte de cocinar con el alma.
                         </p>
                     </div>
                 </div>

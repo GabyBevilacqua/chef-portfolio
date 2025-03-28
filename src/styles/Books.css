@@ -4,13 +4,9 @@
   text-align: center;
   width: 100%;
   background: transparent;
-  padding-top: 90px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
+
   /* Ajustado para evitar separación excesiva con Contact */
 }
-
-
 
 .books-title {
   font-size: 2rem;
@@ -130,7 +126,6 @@
   }
 
   .books {
-
     padding-left: 20px;
     padding-right: 20px;
     /* Reduce el padding */
@@ -166,7 +161,11 @@
     /* Asegura que el texto esté centrado */
     margin-top: 1px;
   }
-
+  .books-title{
+    margin-top: 2px;
+    padding-top: 1px;
+  }
+  
   .book-info h3 {
     font-size: 1rem;
     /* Reduce el tamaño del título del libro */
@@ -200,7 +199,7 @@
   }
 
   .books-background {
-    height: 50vh;
+    height: 70vh;
     /* Reducir altura en pantallas más pequeñas */
   }
   .book-card:hover {

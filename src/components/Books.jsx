@@ -12,13 +12,13 @@ const books = [
         title: "Delicias Gourmet",
         description: "Un libro lleno de recetas exclusivas y secretos culinarios.",
         image: "https://picsum.photos/id/75/200",
-        link: "https://tuweb.com/compra-libro1",
+        link: "https://www.paypal.com/es/home",
     },
     {
         title: "Cocina Creativa",
         description: "Explora nuevas técnicas y reinventa platos clásicos.",
         image: "https://picsum.photos/id/113/200",
-        link: "https://tuweb.com/compra-libro2",
+        link: "https://www.paypal.com/es/home",
     },
 ];
 

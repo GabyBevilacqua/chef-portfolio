@@ -10,9 +10,7 @@
     text-align: center;
     color: #ffffff;
     padding-top: 20px;
-    margin-top: 90px;
-    
-    
+    margin-top: 80px;
   }
   
   .hero-content {
@@ -54,8 +52,9 @@
 @media (max-width: 768px) {
   .hero {
     height: auto; /* Ajusta la altura automáticamente */
-    padding: 50px; /* Añade padding para mejor apariencia */
-    margin-top: 75px; /* Ajusta el margen superior */
+    padding-top: 70px; /* Añade padding para mejor apariencia */
+    padding-bottom: 50px;
+    margin-top: 50px; /* Ajusta el margen superior */
   
   }
 

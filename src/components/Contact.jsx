@@ -94,7 +94,7 @@ const Contact = () => {
                         <a href="https://www.instagram.com/gabriela.bfranchi/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="social-icon" />
                         </a>
-                        <a href="https://facebook.com/tu_cuenta" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/B.Franchi.Catering" target="_blank" rel="noopener noreferrer">
                             <FaFacebook className="social-icon" />
                         </a>
                     </div>
