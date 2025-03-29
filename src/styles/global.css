@@ -6,4 +6,8 @@ html {
     width: 100%;
     overflow-x: hidden;
   }
+
+  body{
+    background: #0F1E22
+  }
   

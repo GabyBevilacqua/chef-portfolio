@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const books = [
     {
-        title: "Delicias Gourmet",
-        description: "Un libro lleno de recetas exclusivas y secretos culinarios.",
-        image: "https://picsum.photos/id/75/200",
+        title: "Recetas de Navidad Venezolanas",
+        description: "Una recopilación de recetas que nos transportan a nuestras cenas familiares, evocando el sabor del hogar sin importar la distancia. Es un regalo para quienes están lejos, pero desean revivir la calidez y felicidad de estas celebraciones.",
+        image: "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248141/portadalibro001_sqkyip.webp",
         link: "https://www.paypal.com/es/home",
     },
     {

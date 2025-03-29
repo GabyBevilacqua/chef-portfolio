@@ -26,7 +26,7 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   max-height: 530px;
   /* Ajusta el tamaño máximo según tu preferencia */
-  width: auto;
+  max-width: 530px;
   /* Mantiene la proporción */
 }
 
@@ -54,7 +54,9 @@
 
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
-
+.gallery{
+    padding: 2rem;
+}
 
   .gallery-title {
     font-size: 1.5rem;

@@ -11,12 +11,18 @@ import "../styles/Gallery.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-    "https://picsum.photos/id/24/500",
-    "https://picsum.photos/id/19/500",
-    "https://picsum.photos/id/23/500",
-    "https://picsum.photos/id/30/500",
-    "https://picsum.photos/id/35/500",
-    "https://picsum.photos/id/42/500",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248137/ga018_mk6nqx.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248135/ga017_ucptpm.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248134/ga016_pyfc2l.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248132/ga015_gfcmyg.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248131/ga014_eqgz26.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248129/ga013_ndikjh.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248128/ga012_qxjeq7.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248126/ga011_hvhsop.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248125/ga010_gthgbt.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248114/ga002_r6plpp.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248113/ga001_gnuvrj.webp",
+    
 ];
 
 const Gallery = () => {
