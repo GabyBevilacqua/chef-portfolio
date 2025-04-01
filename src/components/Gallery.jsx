@@ -22,6 +22,8 @@ const images = [
     "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248125/ga010_gthgbt.webp",
     "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248114/ga002_r6plpp.webp",
     "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248113/ga001_gnuvrj.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248114/ga003_rmc855.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248116/ga004_xyijsu.webp"
     
 ];
 
