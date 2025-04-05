@@ -7,7 +7,8 @@
   background: #0e191b;
   transition: background 0.3s, box-shadow 0.3s;
   z-index: 1000;
-  padding-bottom: 3px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .header.scrolled {
