@@ -65,6 +65,7 @@
   }
 
   .about-content {
+    margin: 0 10px; /* Reduce el margen lateral */
     padding: 25px 25px 25px 25px; /* Reduce el padding del contenido */
   }
 

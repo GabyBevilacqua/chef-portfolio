@@ -1,18 +1,13 @@
 /* Estilos generales */
-.gallery {  
+.gallery1 {  
   padding: 4rem;
-  background-color: #0B1315;
+  background-color: #0b1315c2;
   position: relative;
 }
 
-.gallery-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #ffffff;
-}
 
-.gallery-container {
+
+.gallery1-container {
   .slick-slide {
     display: flex;
     justify-content: center;
@@ -21,7 +16,7 @@
   
 }
 
-.gallery-item {
+.gallery1-item {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   max-height: 530px;
@@ -30,12 +25,12 @@
   /* Mantiene la proporción */
 }
 
-.gallery-item:hover {
+.gallery1-item:hover {
   transform: scale(0.8);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.gallery-item img {
+.gallery1-item img {
   width: 100%;
   /* Ajusta la imagen al tamaño del contenedor */
   height: auto;
@@ -48,23 +43,23 @@
   /* Ancho del borde, estilo y color */
 }
 
-.gallery-item:hover img {
+.gallery1-item:hover img {
   transform: scale(1.1);
 }
 
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
-.gallery{
+.gallery1{
     padding: 2rem;
 }
 
-  .gallery-title {
+  .gallery1-title {
     font-size: 1.5rem;
     /* Reduce el tamaño del título */
     margin-bottom: 1.5rem;
   }
 
-  .gallery-container {
+  .gallery1-container {
 
     .slick-slide {
       display: flex;
@@ -74,14 +69,14 @@
     }
   }
 
-  .gallery-item {
+  .gallery1-item {
     max-height: 200px;
     /* Reduce el tamaño en móviles */
     max-width: 200px;
   }
 
   /* Elimina el efecto hover en móviles */
-  .gallery-item:hover img {
+  .gallery1-item:hover img {
     transform: none;
     /* Desactiva el zoom */
   }

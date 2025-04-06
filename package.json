@@ -12,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.0.15",
+    "framer-motion": "^12.6.3",
     "gsap": "^3.12.7",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",

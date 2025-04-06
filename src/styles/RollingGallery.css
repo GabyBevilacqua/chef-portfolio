@@ -1,0 +1,78 @@
+.gallery-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0B1315;
+    padding-bottom: 30px;
+  }
+  
+  .gallery-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  } 
+  .gallery-title {
+    text-align: center;  
+    font-size: 2rem;
+    color: #ffffff; 
+  }
+
+  .gallery-track {
+    display: flex;
+    height: auto;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    transform-style: preserve-3d;
+    width: 100%;
+    gap: 20px; /* Añade espacio entre las imágenes */
+    transition: transform 5s linear; /* Aumenta la duración para reducir la velocidad */
+  }
+  
+  .gallery-item {
+    position: absolute;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    backface-visibility: hidden;
+    transition: transform 5s linear; /* Aumenta la duración para reducir la velocidad */
+  }
+  
+  .gallery-img {
+    pointer-events: none;
+    height: 180px;
+    width: 350px;
+    border-radius: 15px;
+    border: 2px solid #C9AB81;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+  
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-container {
+        height: 250px; /* Ajusta la altura en móviles */
+    }
+    .gallery-title {
+        font-size: 1.5rem;
+        /* Reduce el tamaño del título */
+        margin-top: 15px;
+      }
+   
+    .gallery-img {
+      height: 100px;
+      width: auto;
+    }
+  }
+  

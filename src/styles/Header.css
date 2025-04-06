@@ -75,13 +75,18 @@
 
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
+  .header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   .nav-container {   
     align-items: center; /* Centra horizontalmente */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
   }
 
   .logo {
     font-size: 1rem; /* Reduce el tamaño del logo en móvil */
-    margin-bottom: 5px;
+    
   }
 
   .nav-links li a { /* Aplica el tamaño de fuente directamente a los links */

@@ -17,9 +17,13 @@ import Contact from './components/Contact'
 import "./styles/global.css";
 import "./styles/Books.css";
 import "./styles/Spinner.css";
+import Services from './components/Services';
+import RollingGallery from './components/RollingGallery';
+import ScrollVelocity from './components/ScrollVelocity';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Estado para controlar el spinner
+  const velocity = 100; // Define un valor para velocity
 
   useEffect(() => {
     // Simula un retraso en la carga (puedes reemplazar esto con lógica real)
@@ -39,12 +43,19 @@ function App() {
           <Header />
           <Hero />
           <About />
-          <Gallery />
+          < RollingGallery autoplay={true} pauseOnHover={true} />
+          <ScrollVelocity
+             texts={['Livros livros', 'Digitais digitais']}
+             velocity={velocity}
+             className="custom-scroll-text"
+         />          
           <div className="books-background">
             <div className="books-overlay">
               <Books />
             </div>
           </div>
+          <Services />
+          <Gallery />
           <Contact />
         </div>
       )}

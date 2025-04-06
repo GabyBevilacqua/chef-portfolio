@@ -62,13 +62,13 @@ const Contact = () => {
     return (
         <section id="contact" className="contact">
             <div ref={contactRef} className="contact-content">
-                <h2 className="contact-title">Contacto</h2>
+                <h2 className="contact-title">Contato</h2>
                 <div className="contact-container">
                     <form className="contact-form" onSubmit={handleSubmit}>
                         <input
                             type="text"
                             name="name"
-                            placeholder="Tu Nombre"
+                            placeholder="Seu Nome"
                             value={formData.name}
                             onChange={handleChange}
                             required
@@ -76,14 +76,14 @@ const Contact = () => {
                         <input
                             type="email"
                             name="email"
-                            placeholder="Tu Email"
+                            placeholder="Seu E-mail"
                             value={formData.email}
                             onChange={handleChange}
                             required
                         />
                         <textarea
                             name="message"
-                            placeholder="Tu Mensaje"
+                            placeholder="Sua Mensagem"
                             value={formData.message}
                             onChange={handleChange}
                             required

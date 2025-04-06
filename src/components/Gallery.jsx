@@ -28,15 +28,15 @@ const images = [
 ];
 
 const Gallery = () => {
-    const galleryRef = useRef(null);
+    const gallery1Ref = useRef(null);
 
     useGSAP(() => {
-        gsap.from(galleryRef.current, {
+        gsap.from(gallery1Ref.current, {
             opacity: 0,
             y: 50,
             duration: 2,
             scrollTrigger: {
-                trigger: galleryRef.current,
+                trigger: gallery1Ref.current,
                 start: "top 80%", // Se activa cuando el 80% de la sección está en la pantalla
                 toggleActions: "play none none none", // Reproduce la animación una vez
             },
@@ -63,12 +63,11 @@ const Gallery = () => {
     };
 
     return (
-        <section id="gallery" className="gallery">
-            <div ref={galleryRef} className="gallery-content">
-                <h2 className="gallery-title">Galería de Platos</h2>
-                <Slider {...settings} className="gallery-container">
+        <section id="gallery1" className="gallery1">
+            <div ref={gallery1Ref} className="gallery1-content">               
+                <Slider {...settings} className="gallery1-container">
                     {images.map((src, index) => (
-                        <div key={index} className="gallery-item">
+                        <div key={index} className="gallery1-item">
                             <img src={src} alt={`Plato ${index + 1}`} />
                         </div>
                     ))}

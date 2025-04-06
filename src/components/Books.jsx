@@ -9,16 +9,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const books = [
     {
-        title: "Recetas de Navidad Venezolanas",
-        description: "Una recopilación de recetas que nos transportan a nuestras cenas familiares, evocando el sabor del hogar sin importar la distancia. Es un regalo para quienes están lejos, pero desean revivir la calidez y felicidad de estas celebraciones.",
+        title: "Receitas de Natal Venezuelanas",
+        description: "Uma seleção de receitas que nos transportam para os jantares em família, trazendo o sabor do lar, não importa a distância. Este é um presente para quem está longe, mas deseja reviver o calor e a alegria dessas celebrações.",
         image: "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248141/portadalibro001_sqkyip.webp",
-        link: "https://www.paypal.com/es/home",
+        link: "https://www.amazon.com",
     },
     {
-        title: "Cocina Creativa",
-        description: "Explora nuevas técnicas y reinventa platos clásicos.",
-        image: "https://picsum.photos/id/113/200",
-        link: "https://www.paypal.com/es/home",
+        title: "Cozinha Criativa",
+        description: "Descubra técnicas inovadoras e reinvente receitas tradicionais.",
+        image: "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248123/ga009_j76qzy.webp",
+        link: "https://www.amazon.com",
     },
 ];
 
@@ -40,7 +40,6 @@ const Books = () => {
 
     return (
         <section ref={booksRef} id="books" className="books">
-            <h2 className="books-title">Libros Digitales</h2>
             <div className="books-container ">
                 {books.map((book, index) => (
                     <div key={index} className="book-card">

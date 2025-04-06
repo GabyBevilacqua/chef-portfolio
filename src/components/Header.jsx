@@ -31,7 +31,7 @@ const Header = () => {
           <ul>
             <li>
               <Link to="hero" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
-                Inicio
+                Home
               </Link>
             </li>
             <li>
@@ -41,17 +41,22 @@ const Header = () => {
             </li>
             <li>
               <Link to="gallery" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
-                Galería
+                Galeria
               </Link>
             </li>
             <li>
               <Link to="books" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
-                Libros
+                Livros
+              </Link>
+            </li>
+            <li>
+              <Link to="services" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+                Serviços
               </Link>
             </li>
             <li>
               <Link to="contact" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
-                Contacto
+                Contato
               </Link>
             </li>
           </ul>

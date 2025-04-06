@@ -62,25 +62,29 @@ const About = () => {
                     <div ref={textRef} className="about-text">
                         <h2>Bio</h2>
                         <p>
-                            ¡Hola! Soy Gabriela B. Franchi, chef profesional con formación en Ingeniería Mecánica. A lo largo de mi carrera, 
-                            he desarrollado habilidades para la resolución de problemas, liderazgo de equipos y gestión eficiente en la cocina, 
-                            siempre buscando la excelencia en cada plato que preparo. <br />
-
-                            Actualmente, trabajo como chef en Campinas, São Paulo, donde ofrezco servicios de 
-                            catering para bodas y eventos. Además, la repostería y los dulces son una de mis 
-                            grandes pasiones, lo que me ha permitido crear propuestas innovadoras y llenas de sabor.<br />
-
-                            Me encanta compartir recetas que combinan tradición y un toque de creatividad, 
-                            como el Pastel de Chucho y preparaciones con vegetales que sorprenden por su sabor 
-                            y versatilidad. Para mí, la cocina es más que una profesión: es una forma de conectar 
-                            con las personas a través de la comida.<br />
-
-                            Si quieres conocer más sobre mi trabajo, te invito a seguirme en mis redes sociales 
-                            y descubrir mis últimas creaciones. ¡Será un placer compartir mi pasión contigo!
+                            Olá! Sou Gabriela B. Franchi, chef profissional com formação em Engenharia Mecânica. Ao longo
+                            da minha carreira, desenvolvi habilidades para resolução de problemas, liderança de
+                            equipes e gestão eficiente na cozinha, sempre buscando a excelência em cada prato que
+                            preparo.
                         </p>
                         <p>
-                            Además de cocinar, he escrito dos libros de recetas que reflejan mi amor por la 
-                            gastronomía y el arte de cocinar con el alma.
+                            Atualmente, trabalho como chef em Campinas, São Paulo, onde ofereço serviços de catering
+                            para casamentos e eventos. Além disso, a confeitaria e os doces são uma das minhas grandes
+                            paixões, o que me permitiu criar propostas inovadoras e cheias de sabor.
+                        </p>
+                        <p>
+                            Adoro compartilhar receitas que combinam tradição e um toque de criatividade, como o
+                            Pastel de Chuchu e preparações com vegetais que surpreendem pelo sabor e versatilidade.
+                            Para mim, a cozinha vai além de uma profissão: é uma forma de me conectar com as pessoas
+                            através da comida.
+                        </p>
+                        <p>
+                            Se quiser conhecer mais sobre o meu trabalho, te convido a me seguir nas redes
+                            sociais e descobrir minhas últimas criações. Será um prazer dividir essa paixão com você!
+                        </p>
+                        <p>
+                            Além de cozinhar, já escrevi dois livros de receitas que refletem meu amor pela
+                            gastronomia e a arte de cozinhar com a alma.
                         </p>
                     </div>
                 </div>

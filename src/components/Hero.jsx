@@ -38,7 +38,7 @@ const Hero = () => {
         <section ref={heroRef} id="hero" className="hero">
             <div className="hero-content">
                 <h1 ref={textRef} className="hero-title">Gabriela B. Franchi</h1>
-                <p className="hero-subtitle">Portafolio y libros</p>
+                <p className="hero-subtitle">Portfólio, livros e muito mais.</p>
 
                 <div className="social-icons">
                     <a href="https://www.instagram.com/gabriela.bfranchi/" target="_blank" rel="noopener noreferrer">
