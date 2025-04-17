@@ -30,32 +30,68 @@ const Header = () => {
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
           <ul>
             <li>
-              <Link to="hero" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+              <Link 
+              to="hero" 
+              smooth={true} 
+              duration={800}
+              easing="easeInOutCubic"
+              onClick={() => setMenuOpen(false)}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="about" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+              <Link 
+              to="about" 
+              smooth={true} 
+              duration={800}
+              easing="easeInOutCubic" 
+              onClick={() => setMenuOpen(false)}
+              >
                 Bio
               </Link>
             </li>
             <li>
-              <Link to="gallery" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+              <Link 
+              to="gallery" 
+              smooth={true} 
+              duration={800}
+              easing="easeInOutCubic" 
+              onClick={() => setMenuOpen(false)}
+              >
                 Galeria
               </Link>
             </li>
             <li>
-              <Link to="books" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+              <Link 
+              to="books"
+              smooth={true} 
+              duration={800}
+              easing="easeInOutCubic" 
+              onClick={() => setMenuOpen(false)}
+              >
                 Livros
               </Link>
             </li>
             <li>
-              <Link to="services" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+              <Link 
+              to="services" 
+              smooth={true} 
+              duration={800}
+              easing="easeInOutCubic" 
+              onClick={() => setMenuOpen(false)}
+              >
                 Serviços
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+              <Link 
+              to="contact" 
+              smooth={true} 
+              duration={800}
+              easing="easeInOutCubic" 
+              onClick={() => setMenuOpen(false)}
+              >
                 Contato
               </Link>
             </li>

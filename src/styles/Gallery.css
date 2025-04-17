@@ -25,11 +25,6 @@
   /* Mantiene la proporción */
 }
 
-.gallery1-item:hover {
-  transform: scale(0.8);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
 .gallery1-item img {
   width: 100%;
   /* Ajusta la imagen al tamaño del contenedor */
@@ -37,14 +32,9 @@
   /* Mantiene la proporción */
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease-in-out;
   border-radius: 10px;
   border: 2px solid #C9AB81;
   /* Ancho del borde, estilo y color */
-}
-
-.gallery1-item:hover img {
-  transform: scale(1.1);
 }
 
 /* Estilos para pantallas móviles */
@@ -73,11 +63,5 @@
     max-height: 200px;
     /* Reduce el tamaño en móviles */
     max-width: 200px;
-  }
-
-  /* Elimina el efecto hover en móviles */
-  .gallery1-item:hover img {
-    transform: none;
-    /* Desactiva el zoom */
   }
 }
