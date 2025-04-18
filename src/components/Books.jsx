@@ -12,13 +12,13 @@ const books = [
         title: "Receitas de Natal Venezuelanas",
         description: "Uma seleção de receitas que nos transportam para os jantares em família, trazendo o sabor do lar, não importa a distância. Este é um presente para quem está longe, mas deseja reviver o calor e a alegria dessas celebrações.",
         image: "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248141/portadalibro001_sqkyip.webp",
-        link: "https://www.amazon.com",
+        link: "https://www.amazon.com.br",
     },
     {
         title: "Cozinha Criativa",
-        description: "Descubra técnicas inovadoras e reinvente receitas tradicionais. Descubra técnicas inovadoras e reinvente receitas tradicionais. Descubra técnicas inovadoras e reinvente receitas tradicionais.",
+        description: "Descubra novas formas de cozinhar com técnicas inovadoras que despertam a curiosidade e desafiam o paladar. Reinvente receitas clássicas com criatividade e paixão, explorando combinações inesperadas e ingredientes versáteis.",
         image: "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248123/ga009_j76qzy.webp",
-        link: "https://www.amazon.com",
+        link: "https://www.amazon.com.br",
     },
 ];
 

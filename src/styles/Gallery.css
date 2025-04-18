@@ -5,7 +5,13 @@
   position: relative;
 }
 
-
+.gallery1-title{
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .gallery1-container {
   .slick-slide {

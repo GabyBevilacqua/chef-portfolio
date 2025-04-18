@@ -95,7 +95,7 @@
   }
 
   .nav-links li a { /* Aplica el tamaño de fuente directamente a los links */
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .nav-links {
     display: none;

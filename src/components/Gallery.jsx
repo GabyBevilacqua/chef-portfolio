@@ -11,19 +11,26 @@ import "../styles/Gallery.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248137/ga018_mk6nqx.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248135/ga017_ucptpm.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248134/ga016_pyfc2l.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248132/ga015_gfcmyg.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248131/ga014_eqgz26.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248129/ga013_ndikjh.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248128/ga012_qxjeq7.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248126/ga011_hvhsop.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248125/ga010_gthgbt.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248114/ga002_r6plpp.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248113/ga001_gnuvrj.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248114/ga003_rmc855.webp",
-    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248116/ga004_xyijsu.webp"
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991450/gabyBFranchi/servicios/fal7xa8nw4zh6s8ak57z.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991450/gabyBFranchi/servicios/djfxzpqczkttrc8qdlcf.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991450/gabyBFranchi/servicios/zrovddsdnad4znjbfeam.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991450/gabyBFranchi/servicios/pmzv0melhdib8sskcsie.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/wbueju3nlpa8xy8lbzwp.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/dpk5awmqlk9qf9pjcb1z.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/wfmlpjpdppkikj8n4gnm.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/yghjmyntxchmwrjap1ra.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/fl9dvjum7vzyhqofqies.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/cshh0etttt6nuaw3ycwl.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991449/gabyBFranchi/servicios/ae0lah4v7oulp8jd9lqh.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/cjzm8xbmp3saqdf7dokc.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/aytixyy9ls4xibr10687.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/pogieqpaevucet6tzdok.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/msh67ajitgvfnwsgiisn.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/svxdrvxhmr6so2fw5dt8.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/plb1jhnzscsrcqetiigk.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/x2aijla8tssx1sqxgizg.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991448/gabyBFranchi/servicios/ujwwzo94woa9nl87yka5.webp",
+    "https://res.cloudinary.com/dzqgni1qi/image/upload/v1744991447/gabyBFranchi/servicios/bizt588piou0fecancss.webp"
     
 ];
 
@@ -64,6 +71,7 @@ const Gallery = () => {
 
     return (
         <section id="gallery1" className="gallery1">
+            <h2 className="gallery1-title playfair-text">Galeria de Serviços</h2>
             <div ref={gallery1Ref} className="gallery1-content">               
                 <Slider {...settings} className="gallery1-container">
                     {images.map((src, index) => (

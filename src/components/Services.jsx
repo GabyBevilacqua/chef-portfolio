@@ -56,10 +56,10 @@ const Services = () => {
         <section ref={servicesRef} id="services" className="services">
             <div className="services-content">
                 <div ref={textRef} className="services-text">
-                    <h2 className="services-title">
+                    <h2 className="services-title playfair-text">
                         Serviços Personalizados de Gastronomia
                     </h2>
-                    <h3 className="services-subtitle">
+                    <h3 className="services-subtitle playfair-text">
                         Cozinha Sob Medida para Seus Momentos Especiais
                     </h3>
                     <p className="services-description">
@@ -67,10 +67,10 @@ const Services = () => {
                         Seja um jantar íntimo, um evento corporativo ou uma celebração inesquecível,
                         trago criatividade, técnica e toque profissional diretamente para sua mesa.
                     </p>
-                    <h3 className="services-subtitle">
+                    <h3 className="services-subtitle playfair-text">
                         Como posso te servir?
                     </h3>
-                    <h3 className="services-subtitle">
+                    <h3 className="services-subtitle playfair-text">
                         Pratos & Preparações por Encomenda
                     </h3>
                     <ul className="services-list">
@@ -78,21 +78,21 @@ const Services = () => {
                         <li>Pratos elaborados (entradas, principais e sobremesas) com ingredientes selecionados.</li>
                         <li>Cardápios personalizados (tradicional, contemporâneo, vegano ou com fusões criativas).</li>
                     </ul>
-                    <h3 className="services-subtitle">
+                    <h3 className="services-subtitle playfair-text">
                         Serviço de Catering Completo
                     </h3>
                     <ul className="services-list">
                         <li>Buffets all inclusive (montagem, equipe e logística) para eventos de qualquer porte.</li>
                         <li>Temas especiais: gastronomia brasileira, internacional ou sob medida.</li>
                     </ul>
-                    <h3 className="services-subtitle">
+                    <h3 className="services-subtitle playfair-text">
                         Chef a Domicílio
                     </h3>
                     <ul className="services-list">
                         <li>Cozinho na sua casa com todo o equipamento necessário, desde jantares românticos até festas familiares.</li>
                         <li>Aulas de culinária personalizadas (aprenda a preparar pratos exclusivos!).</li>
                     </ul>
-                    <h2 className="services-title">
+                    <h2 className="services-title playfair-text">
                         Por que escolher meu trabalho?
                     </h2>
                     <ul className="services-list">

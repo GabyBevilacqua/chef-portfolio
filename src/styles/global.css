@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   margin: 0;
   padding: 0;
   width: 100%;

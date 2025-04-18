@@ -125,7 +125,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
 
   return (
     <div id="gallery" className="gallery-container">
-        <h2 className="gallery-title">Galeria</h2>     
+        <h2 className="gallery-title playfair-text">Galeria</h2>     
       <div className="gallery-content">
         <motion.div
           drag="x"

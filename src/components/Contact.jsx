@@ -62,7 +62,7 @@ const Contact = () => {
     return (
         <section id="contact" className="contact">
             <div ref={contactRef} className="contact-content">
-                <h2 className="contact-title">Contato</h2>
+                <h2 className="contact-title playfair-text">Contato</h2>
                 <div className="contact-container">
                     <form className="contact-form" onSubmit={handleSubmit}>
                         <input
