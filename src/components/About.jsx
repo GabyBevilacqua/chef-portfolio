@@ -63,7 +63,7 @@ const About = () => {
             />
           </div>
           <div ref={textRef} className="about-text">
-            <h2>Sobre mim</h2>
+            <h2 className="playfair-text">Sobre mim</h2>
             <p>
               A cozinha sempre foi meu refúgio, meu ponto de reencontro comigo
               mesma. Desde pequena, me fascinava ver como o fogo mudava as

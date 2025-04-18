@@ -45,7 +45,7 @@ function App() {
           <About />
           < RollingGallery autoplay={true} pauseOnHover={true} />
           <ScrollVelocity
-             texts={['Livros livros', 'Digitais digitais']}
+             texts={['Livros Digitais', 'Digital Books']}
              velocity={velocity}
              className="custom-scroll-text"
          />          

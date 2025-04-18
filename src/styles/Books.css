@@ -1,12 +1,15 @@
 .books {
   /*margin: [arriba] [derecha] [abajo] [izquierda]; */
+  padding-top: 1rem;
   position: relative;
   text-align: center;
   width: 100%;
   background: transparent;
   height: auto;
   /* Ajustado para evitar separación excesiva con Contact */
+
 }
+
 
 .books-title {
   font-size: 2rem;
@@ -16,6 +19,7 @@
   padding-top: 20px;
 }
 
+
 .books-container {
   display: flex;
   flex-wrap: wrap;
@@ -24,34 +28,49 @@
   padding-bottom: 80px;
 }
 
+
 .book-card {
+  display: flex;
+  flex-direction: column;
+  /* Asegura que los elementos estén en columna */
+  justify-content: space-between;
+  /* Distribuye los elementos entre la parte superior e inferior */
+  align-items: center;
+  /* Centra horizontalmente los elementos */
   background: #fff;
   border-radius: 10px;
   border: 2px solid #C9AB81;
-  /* Ancho del borde, estilo y color */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 300px;
   transition: transform 0.3s ease-in-out;
 }
 
+
 .book-card:hover {
   transform: scale(1.05);
 }
 
+
 .book-image {
+  border-radius: 10px;
   width: 100%;
   height: auto;
+  object-fit: cover;
+  /* Asegura que la imagen se ajuste al contenedor */
 }
+
 
 .book-info {
   padding: 2px;
 }
 
+
 .book-info h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 
 .book-info p {
   font-size: 1rem;
@@ -61,23 +80,35 @@
   padding-right: 2px;
 }
 
+
 .buy-button {
-  display: inline-block;
-  padding: 10px 15px;
+  display: block;
+  width: calc(100% - 20px);
+  /* Reduce el ancho del botón para agregar espacio a los lados */
+  padding: 10px 0;
+  /* Ajusta el espacio interno del botón */
   background: #08403D;
   color: #fff;
   text-decoration: none;
+  border: 2px solid #C9AB81;
   border-radius: 5px;
+  /* Agrega bordes redondeados */
   font-weight: bold;
   transition: background 0.3s ease-in-out;
-  margin-bottom: 5px;
+  margin: 10px;
+  /* Agrega margen alrededor del botón */
+  margin-top: auto;
+  /* Empuja el botón hacia la parte inferior */
 }
+
 
 .buy-button:hover {
   background: #0e7a75;
 }
 
+
 /*------------------- efecto ventana con GSAP----------------------*/
+
 
 .books-background {
   position: relative;
@@ -85,6 +116,7 @@
   width: 100%;
   overflow: hidden;
 }
+
 
 .books-background::before {
   content: "";
@@ -102,113 +134,169 @@
   /* Optimización para animaciones */
 }
 
+
 .books-overlay {
   background: rgba(255, 255, 255, 0.479);
   z-index: 1;
 }
+
 
 /*----------------------------------------------------------------- */
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
 
   .books-overlay {
-    /* Reduce la altura de la superposición */
     display: flex;
     align-items: center;
-    /* Centra verticalmente el contenido */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
+
   }
 
   .books {
     padding-left: 20px;
     padding-right: 20px;
-    /* Reduce el padding */
+    padding-top: 0;
     overflow-x: auto;
-    /* Permite hacer scroll horizontal */
     white-space: nowrap;
-    /* Evita que las tarjetas se apilen verticalmente */
+
   }
 
   .books-container {
     display: flex;
-    /* Cambia de grid a flex */
     flex-wrap: nowrap;
-    /* Evita que las tarjetas salten a otra línea */
     gap: 10px;
-    /* Reduce el espacio entre las tarjetas */
     overflow-x: auto;
-    /* Permite scroll horizontal si no caben */
     padding-bottom: 10px;
-    /* Agrega un pequeño espacio debajo */
+
   }
 
   .book-card {
-    display: flex;
-    /* Hace que el contenido se alinee mejor */
-    flex-direction: column;
-    /* Asegura que los elementos estén en columna */
-    align-items: center;
-    /* Centra los elementos horizontalmente */
-    justify-content: center;
-    /* Centra los elementos verticalmente si la altura es suficiente */
-    text-align: center;
-    /* Asegura que el texto esté centrado */
-    margin-top: 1px;
-
-    width: 250px; /* Asegura un ancho fijo para las tarjetas */
-    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    width: 250px;
   }
 
   .book-info {
-    padding: 10px; /* Añade padding interno para evitar que el texto toque los bordes */
-    width: 100%; /* Asegura que el contenido ocupe todo el ancho de la tarjeta */
-    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    padding: 5px;
   }
 
   .book-info h3 {
     font-size: 1rem;
-    /* Reduce el tamaño del título del libro */
     margin-top: 2px;
     word-wrap: break-word;
-    /* Rompe las palabras largas si es necesario */
     overflow-wrap: break-word;
-    /* Alternativa para navegadores más nuevos */
     text-align: center;
-    white-space: normal;/* Permite que el texto se divida en varias líneas */
+    white-space: normal;
   }
 
   .book-info p {
-    font-size: 0.6rem;
-    /* Reduce el tamaño del texto */
+    font-size: 0.7rem;
     max-width: 100%;
-    /* Evita que el texto sobresalga del contenedor */
     word-wrap: break-word;
-    /* Rompe las palabras largas si es necesario */
     overflow-wrap: break-word;
-    /* Alternativa para navegadores más nuevos */
     text-align: center;
-    /* Asegura que el texto esté centrado */
-    padding: 0 10px;
-    /* Agrega un pequeño margen interno para evitar que toque los bordes */
+    padding: 0 2px;
     white-space: normal;
-    /* Asegura que el texto se divida en múltiples líneas */
- 
   }
 
   .buy-button {
-    padding: 6px 10px;
-    /* Reduce el padding del botón */
     font-size: 0.8rem;
-    /* Reduce el tamaño del texto del botón */
+    padding: 8px 0;
   }
 
   .books-background {
     height: auto;
-    /* Reducir altura en pantallas más pequeñas */
+
   }
 
   .book-card:hover {
     transform: none;
   }
 }
+
+/* 
+ .books-overlay {
+    
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    
+  }
+
+  .books {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    padding-top: 0;
+    overflow-x: auto;
+    
+    white-space: nowrap;
+    
+  }
+
+  .books-container {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    gap: 10px;
+    
+    overflow-x: auto;
+    
+    padding-bottom: 10px;
+    
+  }
+
+  .book-card {
+    width: 250px; 
+  }
+
+  .book-info {
+    padding: 5px; 
+ 
+  }
+
+  .book-info h3 {
+    font-size: 1rem;
+   
+    margin-top: 2px;
+    word-wrap: break-word;
+    
+    overflow-wrap: break-word;
+    
+    text-align: center;
+    white-space: normal;
+  }
+
+  .book-info p {
+    font-size: 0.7rem;
+    
+    max-width: 100%;
+    
+    word-wrap: break-word;
+   
+    overflow-wrap: break-word;
+   
+    text-align: center;
+    
+    padding: 0 2px;
+   
+    white-space: normal;
+    
+ 
+  }
+
+  .buy-button {
+    font-size: 0.8rem; 
+    padding: 8px 0; 
+  }
+
+  .books-background {
+    height: auto;
+    
+  }
+
+  .book-card:hover {
+    transform: none;
+  }
+}
+*/

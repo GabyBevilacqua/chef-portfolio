@@ -124,7 +124,7 @@ export const ScrollVelocity = ({
             {texts.map((text, index) => (
                 <VelocityText
                     key={index}
-                    className={className}
+                    className={index === 0 ? "line-one" : "line-two"} // Asigna clases diferentes
                     baseVelocity={index % 2 !== 0 ? -velocity : velocity}
                     scrollContainerRef={scrollContainerRef}
                     damping={damping}

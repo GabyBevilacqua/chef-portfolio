@@ -16,7 +16,7 @@ const books = [
     },
     {
         title: "Cozinha Criativa",
-        description: "Descubra técnicas inovadoras e reinvente receitas tradicionais.",
+        description: "Descubra técnicas inovadoras e reinvente receitas tradicionais. Descubra técnicas inovadoras e reinvente receitas tradicionais. Descubra técnicas inovadoras e reinvente receitas tradicionais.",
         image: "https://res.cloudinary.com/dzqgni1qi/image/upload/v1743248123/ga009_j76qzy.webp",
         link: "https://www.amazon.com",
     },
@@ -45,7 +45,7 @@ const Books = () => {
                     <div key={index} className="book-card">
                         <img src={book.image} alt={book.title} className="book-image" />
                         <div className="book-info">
-                            <h3>{book.title}</h3>
+                            <h3 className="playfair-text">{book.title}</h3>
                             <p>{book.description}</p>
                             <a 
                             href={book.link} 
@@ -53,7 +53,7 @@ const Books = () => {
                             rel="noopener noreferrer" 
                             className="buy-button"
                             >
-                                Comprar
+                                Próximamente
                             </a>
                         </div>
                     </div>

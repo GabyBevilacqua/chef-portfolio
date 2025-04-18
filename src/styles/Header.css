@@ -18,7 +18,7 @@
 
 .nav-container {
   display: flex;
-  justify-content: space-evenly !important; /* Distribuye el espacio entre el logo y los links */
+  justify-content: space-evenly; /* Distribuye el espacio entre el logo y los links */
   align-items: center;
   max-width: auto;
   margin: 0 auto; 
@@ -80,8 +80,13 @@
     padding-bottom: 5px;
   }
   .nav-container {   
-    align-items: center; /* Centra horizontalmente */
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo y la hamburguesa */
+    align-items: center; /* Alinea verticalmente los elementos */
     height: auto; /* Ajusta la altura automáticamente según el contenido */
+    padding: 0 1rem; /* Agrega un poco de espacio a los lados */
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .logo {

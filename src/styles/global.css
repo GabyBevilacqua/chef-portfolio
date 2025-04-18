@@ -1,13 +1,46 @@
 html {
-    scroll-behavior: smooth;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-  body{
-    background: #0F1E22
-  }
-  
+body {
+  background: #0F1E22;
+
+}
+
+/* <weight>: Use a value from 100 to 900
+  */
+
+.montserrat-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* 
+  <weight>: Use a value from 300 to 700
+   */
+.space-grotesk-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* 
+   <weight>: Use a value from 300 to 900
+  */
+
+.playfair-text {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}

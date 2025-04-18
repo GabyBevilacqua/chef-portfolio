@@ -17,10 +17,31 @@
     font-weight: bold;
     letter-spacing: -0.02em;
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+    padding-bottom: 5px; /* Ajusta el valor según sea necesario */
   }
   
   .scroller span {
     flex-shrink: 0;
+  }
+
+  .line-one {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+     /*font-size: 2.5rem; Tamaño de fuente para la primera línea */
+    color: #08403D; /* Color de texto */
+  }
+
+  .line-two {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-variation-settings:
+      "wdth" 100;
+     /*font-size: 3rem; Tamaño de fuente para la segunda línea */
+    color: #08403D; /* Color de texto */
   }
   
   @media (min-width: 768px) {
