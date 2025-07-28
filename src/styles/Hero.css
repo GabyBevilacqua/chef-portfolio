@@ -13,12 +13,15 @@
     margin-top: 80px;
   }
   
-  .hero-content {
-    background: #0b1315be;
-    padding: 30px 80px ;
-    border-radius: 8px;
-    border: 2px solid #C9AB81; /* Ancho del borde, estilo y color */
-  }
+.hero-content {
+  background: rgba(11, 19, 21, 0.4); /* Fondo semitransparente */
+  padding: 30px 80px ;
+  border-radius: 8px;
+  border: 2px solid #C9AB81; /* Ancho del borde, estilo y color */
+  backdrop-filter: blur(12px) saturate(140%); /* Efecto cristal esmerilado */
+  -webkit-backdrop-filter: blur(12px) saturate(140%); /* Soporte Safari */
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+}
   
   .hero-title {
     font-size: 3rem;
