@@ -1,0 +1,107 @@
+/* Estilos para el footer elegante y en sintonía con el sitio */
+.footer {
+    width: 100%;
+    backdrop-filter: blur(12px) saturate(140%);
+    /* Efecto cristal esmerilado */
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    /* Soporte Safari */
+    color: #C9AB81;
+    /* Dorado suave */
+    text-align: center;
+    padding: 1.2rem 0 0.7rem 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    font-family: 'Figtree', 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 -2px 16px 0 rgba(0, 0, 0, 0.12);
+    border-top: 1px solid #C9AB81;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-text {
+    color: #C9AB81;
+    font-weight: 500;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+}
+
+.designer-link {
+    color: #718dc2;
+    /* O el color que prefieras */
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.designer-link:hover {
+    color: #aeb1b6;
+}
+
+.privacy-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 34, 0.65);
+    display: flex;
+    align-items: flex-end;
+    /* Alinea abajo */
+    justify-content: center;
+    padding-bottom: 2.5rem;
+    z-index: 1000;
+}
+
+.privacy-modal {
+    backdrop-filter: blur(12px) saturate(140%);
+    /* Efecto cristal esmerilado */
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    /* Soporte Safari */
+    background: #30463ff5;
+    color: #ffffff;
+    border-radius: 12px;
+    max-width: 90vw;
+    width: 600px;
+    padding: 2rem 1.5rem 1.2rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    position: relative;
+    text-align: left;
+}
+
+.close-modal {
+    margin-top: 1.5rem;
+    background: #C9AB81;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1.2em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.close-modal:hover {
+    background: #a88c5c;
+}
+
+.privacy-link {
+    color: #bad2e7;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font: inherit;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 840px) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 0.7rem 0 0.5rem 0;
+    }
+
+    .privacy-modal {
+        width: 85%;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+}

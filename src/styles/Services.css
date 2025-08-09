@@ -68,8 +68,8 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para pantallas móviles */
-@media (max-width: 768px) {
+/* Estilos para pantallas móviles y tablet */
+@media (max-width: 1180px) {
     .services-content {
         flex-direction: column;
         padding: 25px;

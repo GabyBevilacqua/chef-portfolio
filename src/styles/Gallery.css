@@ -1,7 +1,8 @@
 /* Estilos generales */
 .gallery1 {  
   padding: 4rem;
-  background-color: #0b1315c2;
+  backdrop-filter: blur(12px) saturate(140%); /* Efecto cristal esmerilado */
+  -webkit-backdrop-filter: blur(12px) saturate(140%); /* Soporte Safari */
   position: relative;
 }
 

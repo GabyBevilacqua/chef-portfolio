@@ -54,8 +54,8 @@
   }
 
   
-/* Estilos para pantallas móviles */
-@media (max-width: 768px) {
+/* Estilos para pantallas móviles y tablet */
+@media (max-width: 1180px) {
  
 
   .about-container {

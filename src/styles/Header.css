@@ -12,7 +12,11 @@
 }
 
 .header.scrolled {
-  background: rgba(8, 64, 61, 0.9);
+    backdrop-filter: blur(12px) saturate(140%);
+  /* Efecto cristal esmerilado */
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  /* Soporte Safari */
+  background: rgba(8, 64, 61, 0.603);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 

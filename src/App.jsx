@@ -20,6 +20,7 @@ import "./styles/Spinner.css";
 import Services from './components/Services';
 import RollingGallery from './components/RollingGallery';
 import ScrollVelocity from './components/ScrollVelocity';
+import Footer from './components/Footer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Estado para controlar el spinner
@@ -57,6 +58,7 @@ function App() {
           <Services />
           <Gallery />
           <Contact />
+          <Footer />
         </div>
       )}
     </>
